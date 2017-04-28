@@ -10,10 +10,10 @@
   // Connecting to ROS
   // -----------------
 
-  var url = 'ws://' + window.location.host + ':9090'
-
+  var address = 'ws://' + window.location.host + ':9090'
+  
   var ros = new ROSLIB.Ros({
-    url : url
+    url : address
   });
 
   ros.on('connection', function() {
@@ -47,7 +47,7 @@
 </script>
 </head>
 
-<body style="margin:0; padding:0;">
-  <img id="face" src="images/neutral.gif" />
+<body style="margin:0; padding:0; text-align: center; height: 100%;">
+  <img id="face" src="images/neutral.gif" style="min-height: 100%; width: auto;" />
 </body>
 </html>
