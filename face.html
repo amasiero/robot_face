@@ -53,7 +53,7 @@
   }
   .fit { /* set relative picture size */
     max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
   }
   .center {
     display: block;
@@ -63,6 +63,6 @@
 </head>
 
 <body>
-  <img id="face" src="images/neutral.gif" class="center" />
+  <img id="face" src="images/neutral.gif" class="center" onclick="location.reload()"/>
 </body>
 </html>
