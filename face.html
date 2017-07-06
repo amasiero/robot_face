@@ -51,18 +51,35 @@
     padding: 0;
     margin: 0;
   }
-  .fit { /* set relative picture size */
+
+  img {
+    max-height: 100%;
     max-width: 100%;
-    min-height: 100%;
+    width: auto; /* These two are added only for clarity, */
+    height: auto; /* as the default is auto anyway */
+    
   }
+
+  .container { /* set relative picture size */
+    height: 100%; 
+    width: 100%;
+  }
+
   .center {
     display: block;
     margin: auto;
   }
+
+  .cover {
+  object-fit: cover;
+  }
+
 </style>
 </head>
 
 <body>
-  <img id="face" src="images/neutral.gif" class="center" onclick="location.reload()"/>
+  <div class="container">
+    <img id="face" src="images/neutral.gif" class="center" onclick="location.reload()"/>
+  </div>
 </body>
 </html>
