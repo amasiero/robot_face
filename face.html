@@ -12,7 +12,7 @@
   // -----------------
 
   var address = 'ws://' + window.location.host + ':9090'
-  
+
   var ros = new ROSLIB.Ros({
     url : address
   });
@@ -57,11 +57,11 @@
     max-width: 100%;
     width: auto; /* These two are added only for clarity, */
     height: auto; /* as the default is auto anyway */
-    
+
   }
 
   .container { /* set relative picture size */
-    height: 100%; 
+    height: 100%;
     width: 100%;
   }
 
@@ -78,8 +78,8 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- <div class="container"> -->
     <img id="face" src="images/neutral.gif" class="center" onclick="location.reload()"/>
-  </div>
+  <!-- </div> -->
 </body>
 </html>
